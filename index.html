@@ -6,3 +6,16 @@
 <body>
 	RD chat bot test site.
 </body>
+<script>
+  window.watsonAssistantChatOptions = {
+      integrationID: "24864f12-0344-4dbe-bdf7-13d51a5a511a", // The ID of this integration.
+      region: "eu-gb", // The region your integration is hosted in.
+      serviceInstanceID: "1de35ad2-72f6-4063-b63f-5d0fb7327b02", // The ID of your service instance.
+      onLoad: function(instance) { instance.render(); }
+    };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+    document.head.appendChild(t);
+  });
+</script>
